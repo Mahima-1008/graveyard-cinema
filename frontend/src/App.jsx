@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout';
 import AuthLayout from './layouts/AuthLayout';
 import SuspenseFallback from './components/common/SuspenseFallback';
 import ProtectedRoute from './routes/ProtectedRoute';
+import { ErrorBoundary } from './components/common/ErrorBoundary';
 
 // Lazy loading pages
 const Home = lazy(() => import('./pages/Home'));
@@ -29,40 +30,42 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
   return (
-    <Suspense fallback={<SuspenseFallback />}>
-      <Routes>
-        {/* Auth Routes */}
-        <Route element={<AuthLayout />}>
-          <Route path={ROUTES.LOGIN} element={<Login />} />
-          <Route path={ROUTES.REGISTER} element={<Register />} />
-        </Route>
+    <ErrorBoundary>
+      <Suspense fallback={<SuspenseFallback />}>
+        <Routes>
+          {/* Auth Routes */}
+          <Route element={<AuthLayout />}>
+            <Route path={ROUTES.LOGIN} element={<Login />} />
+            <Route path={ROUTES.REGISTER} element={<Register />} />
+          </Route>
 
-        {/* Full-screen Takeover Routes */}
-        <Route path={ROUTES.REELS} element={<Reels />} />
+          {/* Full-screen Takeover Routes */}
+          <Route path={ROUTES.REELS} element={<Reels />} />
 
-        {/* Main Routes */}
-        <Route element={<MainLayout />}>
-          <Route path={ROUTES.HOME} element={<Home />} />
-          <Route path={ROUTES.MOVIES} element={<Movies />} />
-          <Route path={ROUTES.MOVIE_DETAIL} element={<MovieDetail />} />
-          <Route path={ROUTES.SERIES} element={<Series />} />
-          <Route path={ROUTES.SERIES_DETAIL} element={<SeriesDetail />} />
-          <Route path={ROUTES.SHORT_FILMS} element={<ShortFilms />} />
-          <Route path={ROUTES.STORIES} element={<Stories />} />
-          <Route path={ROUTES.STORY_DETAIL} element={<StoryDetail />} />
-          <Route path={ROUTES.TRAILERS} element={<Trailers />} />
-          <Route path={ROUTES.SEARCH} element={<Search />} />
-          <Route path={ROUTES.GENRE} element={<Genre />} />
-          
-          {/* Protected Routes */}
-          <Route path={ROUTES.PROFILE} element={<ProtectedRoute><Profile /></ProtectedRoute>} />
-          <Route path={ROUTES.WATCHLIST} element={<ProtectedRoute><Watchlist /></ProtectedRoute>} />
-        </Route>
+          {/* Main Routes */}
+          <Route element={<MainLayout />}>
+            <Route path={ROUTES.HOME} element={<Home />} />
+            <Route path={ROUTES.MOVIES} element={<Movies />} />
+            <Route path={ROUTES.MOVIE_DETAIL} element={<MovieDetail />} />
+            <Route path={ROUTES.SERIES} element={<Series />} />
+            <Route path={ROUTES.SERIES_DETAIL} element={<SeriesDetail />} />
+            <Route path={ROUTES.SHORT_FILMS} element={<ShortFilms />} />
+            <Route path={ROUTES.STORIES} element={<Stories />} />
+            <Route path={ROUTES.STORY_DETAIL} element={<StoryDetail />} />
+            <Route path={ROUTES.TRAILERS} element={<Trailers />} />
+            <Route path={ROUTES.SEARCH} element={<Search />} />
+            <Route path={ROUTES.GENRE} element={<Genre />} />
+            
+            {/* Protected Routes */}
+            <Route path={ROUTES.PROFILE} element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+            <Route path={ROUTES.WATCHLIST} element={<ProtectedRoute><Watchlist /></ProtectedRoute>} />
+          </Route>
 
-        {/* 404 Not Found Route */}
-        <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
-      </Routes>
-    </Suspense>
+          {/* 404 Not Found Route */}
+          <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ROUTES } from '../../routes/routes';
 import { X, Camera, PlaySquare, ThumbsUp } from 'lucide-react';
 
@@ -11,9 +11,11 @@ export default function Footer() {
           
           {/* Brand Col */}
           <div>
-            <h3 className="font-display font-bold text-2xl text-text-bright tracking-widest text-shadow-glow mb-4">
-              GRAVEYARD<br />CINEMA
-            </h3>
+            <Link to={ROUTES.HOME} className="inline-block mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded">
+              <h3 className="font-display font-bold text-2xl text-text-bright tracking-widest text-shadow-glow mb-4">
+                GRAVEYARD<br />CINEMA
+              </h3>
+            </Link>
             <p className="text-text-muted text-sm max-w-xs mb-6">
               Your premium destination for horror, thrillers, and the macabre. Streaming nightmares 24/7.
             </p>
@@ -23,10 +25,10 @@ export default function Footer() {
           <div>
             <h4 className="font-body font-bold text-text-bright mb-4 uppercase tracking-wider text-sm">Browse</h4>
             <ul className="space-y-3">
-              <li><RouterLink to={ROUTES.MOVIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Movies</RouterLink></li>
-              <li><RouterLink to={ROUTES.SERIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Series</RouterLink></li>
-              <li><RouterLink to={ROUTES.SHORT_FILMS} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Short Films</RouterLink></li>
-              <li><RouterLink to={ROUTES.STORIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Stories</RouterLink></li>
+              <li><Link to={ROUTES.MOVIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Movies</Link></li>
+              <li><Link to={ROUTES.SERIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Series</Link></li>
+              <li><Link to={ROUTES.SHORT_FILMS} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Short Films</Link></li>
+              <li><Link to={ROUTES.STORIES} className="text-sm text-text-muted hover:text-text-bright transition-colors focus-visible:outline-none focus-visible:text-text-bright">Stories</Link></li>
             </ul>
           </div>
 
