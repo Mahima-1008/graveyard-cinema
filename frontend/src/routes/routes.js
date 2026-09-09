@@ -1,0 +1,19 @@
+export const ROUTES = {
+  HOME: "/",
+  MOVIES: "/movies",
+  MOVIE_DETAIL: "/movies/:slug",
+  SERIES: "/series",
+  SERIES_DETAIL: "/series/:slug",
+  SHORT_FILMS: "/short-films",
+  STORIES: "/stories",
+  STORY_DETAIL: "/stories/:slug",
+  REELS: "/reels",
+  TRAILERS: "/trailers",
+  SEARCH: "/search",
+  GENRE: "/genre/:slug",
+  LOGIN: "/login",
+  REGISTER: "/register",
+  PROFILE: "/profile",
+  WATCHLIST: "/watchlist",
+  NOT_FOUND: "*"
+};
