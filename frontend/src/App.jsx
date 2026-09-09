@@ -37,6 +37,9 @@ function App() {
           <Route path={ROUTES.REGISTER} element={<Register />} />
         </Route>
 
+        {/* Full-screen Takeover Routes */}
+        <Route path={ROUTES.REELS} element={<Reels />} />
+
         {/* Main Routes */}
         <Route element={<MainLayout />}>
           <Route path={ROUTES.HOME} element={<Home />} />
@@ -47,7 +50,6 @@ function App() {
           <Route path={ROUTES.SHORT_FILMS} element={<ShortFilms />} />
           <Route path={ROUTES.STORIES} element={<Stories />} />
           <Route path={ROUTES.STORY_DETAIL} element={<StoryDetail />} />
-          <Route path={ROUTES.REELS} element={<Reels />} />
           <Route path={ROUTES.TRAILERS} element={<Trailers />} />
           <Route path={ROUTES.SEARCH} element={<Search />} />
           <Route path={ROUTES.GENRE} element={<Genre />} />
