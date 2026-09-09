@@ -1,0 +1,122 @@
+[
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Wes Craven",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 5,
+    "coverUrl": "https://picsum.photos/seed/story-0/400/600",
+    "category": "Psychological Horror",
+    "rating": 3.8
+  },
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Sam Raimi",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 4,
+    "coverUrl": "https://picsum.photos/seed/story-1/400/600",
+    "category": "Horror Comedy",
+    "rating": 4.5
+  },
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Wes Craven",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 6,
+    "coverUrl": "https://picsum.photos/seed/story-2/400/600",
+    "category": "Possession",
+    "rating": 4.5
+  },
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Ari Aster",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 12,
+    "coverUrl": "https://picsum.photos/seed/story-3/400/600",
+    "category": "True Crime Horror",
+    "rating": 4.8
+  },
+  {
+    "title": "The Tale of the Asylum",
+    "author": "George A. Romero",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 9,
+    "coverUrl": "https://picsum.photos/seed/story-4/400/600",
+    "category": "Survival Horror",
+    "rating": 4.2
+  },
+  {
+    "title": "The Tale of the Asylum",
+    "author": "Jordan Peele",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 9,
+    "coverUrl": "https://picsum.photos/seed/story-5/400/600",
+    "category": "Supernatural",
+    "rating": 4
+  },
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Sam Raimi",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 14,
+    "coverUrl": "https://picsum.photos/seed/story-6/400/600",
+    "category": "Ghost Stories",
+    "rating": 4.4
+  },
+  {
+    "title": "The Tale of the Shadow",
+    "author": "Sam Raimi",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 12,
+    "coverUrl": "https://picsum.photos/seed/story-7/400/600",
+    "category": "Zombie",
+    "rating": 4.2
+  },
+  {
+    "title": "The Tale of the Shadow",
+    "author": "David Cronenberg",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 9,
+    "coverUrl": "https://picsum.photos/seed/story-8/400/600",
+    "category": "Psychological Horror",
+    "rating": 4.8
+  },
+  {
+    "title": "The Tale of the Shadow",
+    "author": "George A. Romero",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 5,
+    "coverUrl": "https://picsum.photos/seed/story-9/400/600",
+    "category": "Sci-Fi Horror",
+    "rating": 3.9
+  },
+  {
+    "title": "The Tale of the Old Man",
+    "author": "Eli Roth",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 8,
+    "coverUrl": "https://picsum.photos/seed/story-10/400/600",
+    "category": "Paranormal",
+    "rating": 4.1
+  },
+  {
+    "title": "The Tale of the Woods",
+    "author": "Eli Roth",
+    "excerpt": "It started with a whisper in the dark, and ended in blood.",
+    "fullTextPlaceholder": "This is the full text of the story...",
+    "readTimeMin": 3,
+    "coverUrl": "https://picsum.photos/seed/story-11/400/600",
+    "category": "Haunted House",
+    "rating": 4.1
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "c-0",
+    "name": "Eli Roth 0",
+    "avatarUrl": "https://picsum.photos/seed/creator-0/200/200",
+    "followers": "213k",
+    "verified": true,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-1",
+    "name": "James Wan 1",
+    "avatarUrl": "https://picsum.photos/seed/creator-1/200/200",
+    "followers": "176k",
+    "verified": true,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-2",
+    "name": "Ari Aster 2",
+    "avatarUrl": "https://picsum.photos/seed/creator-2/200/200",
+    "followers": "378k",
+    "verified": true,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-3",
+    "name": "Jordan Peele 3",
+    "avatarUrl": "https://picsum.photos/seed/creator-3/200/200",
+    "followers": "214k",
+    "verified": false,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-4",
+    "name": "John Carpenter 4",
+    "avatarUrl": "https://picsum.photos/seed/creator-4/200/200",
+    "followers": "350k",
+    "verified": true,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-5",
+    "name": "Wes Craven 5",
+    "avatarUrl": "https://picsum.photos/seed/creator-5/200/200",
+    "followers": "413k",
+    "verified": true,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-6",
+    "name": "George A. Romero 6",
+    "avatarUrl": "https://picsum.photos/seed/creator-6/200/200",
+    "followers": "357k",
+    "verified": false,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-7",
+    "name": "Tobe Hooper 7",
+    "avatarUrl": "https://picsum.photos/seed/creator-7/200/200",
+    "followers": "48k",
+    "verified": false,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-8",
+    "name": "Sam Raimi 8",
+    "avatarUrl": "https://picsum.photos/seed/creator-8/200/200",
+    "followers": "54k",
+    "verified": false,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  },
+  {
+    "id": "c-9",
+    "name": "David Cronenberg 9",
+    "avatarUrl": "https://picsum.photos/seed/creator-9/200/200",
+    "followers": "62k",
+    "verified": false,
+    "bio": "Horror fanatic. Making nightmares a reality."
+  }
+]

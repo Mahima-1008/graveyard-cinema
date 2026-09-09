@@ -1,0 +1,537 @@
+[
+  {
+    "id": "m-0",
+    "slug": "the-weeping-shadows",
+    "title": "The Weeping Shadows",
+    "tagline": "Fear what you cannot see.",
+    "synopsis": "A terrifying tale about a skeptical priest who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-0/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-0/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1982,
+    "runtime": "89m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 4.5,
+    "userRating": 4.7,
+    "genres": [
+      "Zombie",
+      "Ghost Stories"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 90,
+    "cast": [
+      "Bill Skarsgård",
+      "Lin Shaye"
+    ],
+    "director": "George A. Romero",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-1",
+    "slug": "echoes-of-the-abyss",
+    "title": "Echoes of the Abyss",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a group of friends who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-1/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-1/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1994,
+    "runtime": "134m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 6.6,
+    "userRating": 3.9,
+    "genres": [
+      "Found Footage",
+      "Sci-Fi Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 93,
+    "cast": [
+      "Anya Taylor-Joy",
+      "Anya Taylor-Joy"
+    ],
+    "director": "Tobe Hooper",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-2",
+    "slug": "blood-moon-rising",
+    "title": "Blood Moon Rising",
+    "tagline": "The nightmare is real.",
+    "synopsis": "A terrifying tale about a skeptical priest who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-2/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-2/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2008,
+    "runtime": "134m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 9.2,
+    "userRating": 4.9,
+    "genres": [
+      "Survival Horror",
+      "Zombie"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 74,
+    "cast": [
+      "Lin Shaye",
+      "Bill Skarsgård"
+    ],
+    "director": "George A. Romero",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-3",
+    "slug": "whispering-pines",
+    "title": "Whispering Pines",
+    "tagline": "It knows your deepest fears.",
+    "synopsis": "A terrifying tale about a family who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-3/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-3/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1998,
+    "runtime": "88m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 5.1,
+    "userRating": 3.3,
+    "genres": [
+      "Ghost Stories",
+      "Sci-Fi Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 66,
+    "cast": [
+      "Lin Shaye",
+      "Toni Collette"
+    ],
+    "director": "Jordan Peele",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-4",
+    "slug": "the-last-exorcism",
+    "title": "The Last Exorcism",
+    "tagline": "It knows your deepest fears.",
+    "synopsis": "A terrifying tale about a group of friends who discover a haunted artifact and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-4/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-4/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2011,
+    "runtime": "108m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 6.8,
+    "userRating": 4,
+    "genres": [
+      "Paranormal",
+      "Psychological Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 2,
+    "fearMeter": 79,
+    "cast": [
+      "Jamie Lee Curtis",
+      "Jamie Lee Curtis"
+    ],
+    "director": "John Carpenter",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-5",
+    "slug": "mansion-of-dread",
+    "title": "Mansion of Dread",
+    "tagline": "It knows your deepest fears.",
+    "synopsis": "A terrifying tale about a group of friends who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-5/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-5/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1984,
+    "runtime": "103m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 7.8,
+    "userRating": 3.8,
+    "genres": [
+      "Vampire",
+      "Haunted House"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 78,
+    "cast": [
+      "Bill Skarsgård",
+      "Anya Taylor-Joy"
+    ],
+    "director": "Ari Aster",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-6",
+    "slug": "silent-nightmares",
+    "title": "Silent Nightmares",
+    "tagline": "The end is only the beginning.",
+    "synopsis": "A terrifying tale about a skeptical priest who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-6/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-6/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1992,
+    "runtime": "112m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 4.3,
+    "userRating": 3.5,
+    "genres": [
+      "Psychological Horror",
+      "Monster"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 63,
+    "cast": [
+      "Mia Goth",
+      "Toni Collette"
+    ],
+    "director": "Ari Aster",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-7",
+    "slug": "the-forgotten-ritual",
+    "title": "The Forgotten Ritual",
+    "tagline": "The nightmare is real.",
+    "synopsis": "A terrifying tale about a lone investigator who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-7/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-7/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1998,
+    "runtime": "132m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 4.7,
+    "userRating": 3.6,
+    "genres": [
+      "Found Footage",
+      "Psychological Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 2,
+    "fearMeter": 93,
+    "cast": [
+      "Bill Skarsgård",
+      "Bruce Campbell"
+    ],
+    "director": "John Carpenter",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-8",
+    "slug": "flesh-and-bone",
+    "title": "Flesh and Bone",
+    "tagline": "It knows your deepest fears.",
+    "synopsis": "A terrifying tale about a family who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-8/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-8/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2005,
+    "runtime": "115m",
+    "ageRating": "R",
+    "imdbStyleRating": 8.5,
+    "userRating": 3.3,
+    "genres": [
+      "Found Footage",
+      "Vampire"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 5,
+    "fearMeter": 75,
+    "cast": [
+      "Toni Collette",
+      "Lin Shaye"
+    ],
+    "director": "Eli Roth",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-9",
+    "slug": "crimson-tide",
+    "title": "Crimson Tide",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a group of friends who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-9/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-9/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1982,
+    "runtime": "103m",
+    "ageRating": "R",
+    "imdbStyleRating": 7.4,
+    "userRating": 4.1,
+    "genres": [
+      "Possession",
+      "Haunted House"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 69,
+    "cast": [
+      "Maika Monroe",
+      "Patrick Wilson"
+    ],
+    "director": "David Cronenberg",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-10",
+    "slug": "the-entity-within",
+    "title": "The Entity Within",
+    "tagline": "The end is only the beginning.",
+    "synopsis": "A terrifying tale about a skeptical priest who discover a haunted artifact and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-10/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-10/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1989,
+    "runtime": "133m",
+    "ageRating": "R",
+    "imdbStyleRating": 4.8,
+    "userRating": 3.3,
+    "genres": [
+      "Survival Horror",
+      "True Crime Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 97,
+    "cast": [
+      "Patrick Wilson",
+      "Bruce Campbell"
+    ],
+    "director": "Jordan Peele",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-11",
+    "slug": "house-of-mirrors",
+    "title": "House of Mirrors",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a family who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-11/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-11/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2013,
+    "runtime": "128m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 5.7,
+    "userRating": 4.2,
+    "genres": [
+      "Survival Horror",
+      "Vampire"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 83,
+    "cast": [
+      "Vera Farmiga",
+      "Vera Farmiga"
+    ],
+    "director": "Eli Roth",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-12",
+    "slug": "the-hollow-man",
+    "title": "The Hollow Man",
+    "tagline": "The end is only the beginning.",
+    "synopsis": "A terrifying tale about a group of friends who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-12/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-12/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1987,
+    "runtime": "119m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 4.3,
+    "userRating": 4.1,
+    "genres": [
+      "Supernatural",
+      "True Crime Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 3,
+    "fearMeter": 70,
+    "cast": [
+      "Bill Skarsgård",
+      "Bill Skarsgård"
+    ],
+    "director": "Eli Roth",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-13",
+    "slug": "descent-into-madness",
+    "title": "Descent into Madness",
+    "tagline": "Don't look behind you.",
+    "synopsis": "A terrifying tale about a group of friends who discover a haunted artifact and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-13/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-13/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1998,
+    "runtime": "94m",
+    "ageRating": "R",
+    "imdbStyleRating": 5.7,
+    "userRating": 4.4,
+    "genres": [
+      "Ghost Stories",
+      "Haunted House"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 74,
+    "cast": [
+      "Bruce Campbell",
+      "Toni Collette"
+    ],
+    "director": "James Wan",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-14",
+    "slug": "the-witching-hour",
+    "title": "The Witching Hour",
+    "tagline": "The end is only the beginning.",
+    "synopsis": "A terrifying tale about a family who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-14/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-14/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2002,
+    "runtime": "135m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 4.6,
+    "userRating": 4.8,
+    "genres": [
+      "Psychological Horror",
+      "Horror Comedy"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 88,
+    "cast": [
+      "Maika Monroe",
+      "Bill Skarsgård"
+    ],
+    "director": "Ari Aster",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  }
+]

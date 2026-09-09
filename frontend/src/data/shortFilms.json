@@ -1,0 +1,360 @@
+[
+  {
+    "id": "m-0",
+    "slug": "the-weeping-shadows",
+    "title": "The Weeping Shadows (Short)",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a lone investigator who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-0/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-0/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2002,
+    "runtime": "28m",
+    "ageRating": "R",
+    "imdbStyleRating": 9.3,
+    "userRating": 3.1,
+    "genres": [
+      "Demonic",
+      "Horror Comedy"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 84,
+    "cast": [
+      "Maika Monroe",
+      "Jamie Lee Curtis"
+    ],
+    "director": "George A. Romero",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-1",
+    "slug": "echoes-of-the-abyss",
+    "title": "Echoes of the Abyss (Short)",
+    "tagline": "Fear what you cannot see.",
+    "synopsis": "A terrifying tale about a skeptical priest who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-1/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-1/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1983,
+    "runtime": "18m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 7.2,
+    "userRating": 3.6,
+    "genres": [
+      "Paranormal",
+      "Horror Comedy"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 5,
+    "fearMeter": 88,
+    "cast": [
+      "Jamie Lee Curtis",
+      "Bruce Campbell"
+    ],
+    "director": "George A. Romero",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-2",
+    "slug": "blood-moon-rising",
+    "title": "Blood Moon Rising (Short)",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a group of friends who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-2/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-2/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1987,
+    "runtime": "25m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 4.8,
+    "userRating": 3.1,
+    "genres": [
+      "Psychological Horror",
+      "Vampire"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 82,
+    "cast": [
+      "Anya Taylor-Joy",
+      "Mia Goth"
+    ],
+    "director": "David Cronenberg",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-3",
+    "slug": "whispering-pines",
+    "title": "Whispering Pines (Short)",
+    "tagline": "Fear what you cannot see.",
+    "synopsis": "A terrifying tale about a lone investigator who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-3/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-3/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2013,
+    "runtime": "25m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 7.5,
+    "userRating": 4.7,
+    "genres": [
+      "Zombie",
+      "Survival Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 5,
+    "fearMeter": 83,
+    "cast": [
+      "Toni Collette",
+      "Lin Shaye"
+    ],
+    "director": "Ari Aster",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-4",
+    "slug": "the-last-exorcism",
+    "title": "The Last Exorcism (Short)",
+    "tagline": "There is no escape.",
+    "synopsis": "A terrifying tale about a family who discover a cursed burial ground and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-4/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-4/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2023,
+    "runtime": "8m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 6.1,
+    "userRating": 3,
+    "genres": [
+      "Psychological Horror",
+      "Sci-Fi Horror"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 2,
+    "fearMeter": 81,
+    "cast": [
+      "Toni Collette",
+      "Anya Taylor-Joy"
+    ],
+    "director": "Tobe Hooper",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-5",
+    "slug": "mansion-of-dread",
+    "title": "Mansion of Dread (Short)",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a group of friends who discover an ancient evil and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-5/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-5/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 2009,
+    "runtime": "13m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 4.6,
+    "userRating": 4.6,
+    "genres": [
+      "Monster",
+      "Paranormal"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 2,
+    "fearMeter": 96,
+    "cast": [
+      "Patrick Wilson",
+      "Anya Taylor-Joy"
+    ],
+    "director": "David Cronenberg",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-6",
+    "slug": "silent-nightmares",
+    "title": "Silent Nightmares (Short)",
+    "tagline": "The nightmare is real.",
+    "synopsis": "A terrifying tale about a group of friends who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-6/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-6/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1989,
+    "runtime": "15m",
+    "ageRating": "NC-17",
+    "imdbStyleRating": 5.8,
+    "userRating": 3.6,
+    "genres": [
+      "Possession",
+      "Supernatural"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 1,
+    "fearMeter": 79,
+    "cast": [
+      "Anya Taylor-Joy",
+      "Lin Shaye"
+    ],
+    "director": "David Cronenberg",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-7",
+    "slug": "the-forgotten-ritual",
+    "title": "The Forgotten Ritual (Short)",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a family who discover a haunted artifact and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-7/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-7/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1991,
+    "runtime": "29m",
+    "ageRating": "R",
+    "imdbStyleRating": 6.7,
+    "userRating": 3.4,
+    "genres": [
+      "Paranormal",
+      "Monster"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 4,
+    "fearMeter": 82,
+    "cast": [
+      "Mia Goth",
+      "Maika Monroe"
+    ],
+    "director": "David Cronenberg",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-8",
+    "slug": "flesh-and-bone",
+    "title": "Flesh and Bone (Short)",
+    "tagline": "The end is only the beginning.",
+    "synopsis": "A terrifying tale about a family who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-8/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-8/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1993,
+    "runtime": "16m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 7.3,
+    "userRating": 4,
+    "genres": [
+      "Paranormal",
+      "Demonic"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 3,
+    "fearMeter": 91,
+    "cast": [
+      "Vera Farmiga",
+      "Bruce Campbell"
+    ],
+    "director": "George A. Romero",
+    "awards": [],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  },
+  {
+    "id": "m-9",
+    "slug": "crimson-tide",
+    "title": "Crimson Tide (Short)",
+    "tagline": "Some secrets should stay buried.",
+    "synopsis": "A terrifying tale about a group of friends who discover a demonic presence and must fight for their lives.",
+    "posterUrl": "https://picsum.photos/seed/movie-poster-9/400/600",
+    "backdropUrl": "https://picsum.photos/seed/movie-backdrop-9/1280/720",
+    "trailerUrl": "https://example.com/trailer.mp4",
+    "year": 1996,
+    "runtime": "29m",
+    "ageRating": "PG-13",
+    "imdbStyleRating": 6.3,
+    "userRating": 3.9,
+    "genres": [
+      "Paranormal",
+      "Haunted House"
+    ],
+    "languages": [
+      "English"
+    ],
+    "scareLevel": 2,
+    "fearMeter": 92,
+    "cast": [
+      "Patrick Wilson",
+      "Lin Shaye"
+    ],
+    "director": "Sam Raimi",
+    "awards": [
+      "Best Horror Picture"
+    ],
+    "contentWarnings": [
+      "Violence",
+      "Gore",
+      "Jump Scares"
+    ]
+  }
+]

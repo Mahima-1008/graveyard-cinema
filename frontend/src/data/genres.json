@@ -1,0 +1,92 @@
+[
+  {
+    "id": "psychological-horror",
+    "name": "Psychological Horror",
+    "slug": "psychological-horror",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-PsychologicalHorror/800/600"
+  },
+  {
+    "id": "supernatural",
+    "name": "Supernatural",
+    "slug": "supernatural",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Supernatural/800/600"
+  },
+  {
+    "id": "paranormal",
+    "name": "Paranormal",
+    "slug": "paranormal",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Paranormal/800/600"
+  },
+  {
+    "id": "zombie",
+    "name": "Zombie",
+    "slug": "zombie",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Zombie/800/600"
+  },
+  {
+    "id": "vampire",
+    "name": "Vampire",
+    "slug": "vampire",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Vampire/800/600"
+  },
+  {
+    "id": "monster",
+    "name": "Monster",
+    "slug": "monster",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Monster/800/600"
+  },
+  {
+    "id": "found-footage",
+    "name": "Found Footage",
+    "slug": "found-footage",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-FoundFootage/800/600"
+  },
+  {
+    "id": "haunted-house",
+    "name": "Haunted House",
+    "slug": "haunted-house",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-HauntedHouse/800/600"
+  },
+  {
+    "id": "possession",
+    "name": "Possession",
+    "slug": "possession",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Possession/800/600"
+  },
+  {
+    "id": "demonic",
+    "name": "Demonic",
+    "slug": "demonic",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Demonic/800/600"
+  },
+  {
+    "id": "ghost-stories",
+    "name": "Ghost Stories",
+    "slug": "ghost-stories",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-GhostStories/800/600"
+  },
+  {
+    "id": "survival-horror",
+    "name": "Survival Horror",
+    "slug": "survival-horror",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-SurvivalHorror/800/600"
+  },
+  {
+    "id": "sci-fi-horror",
+    "name": "Sci-Fi Horror",
+    "slug": "sci-fi-horror",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-Sci-FiHorror/800/600"
+  },
+  {
+    "id": "horror-comedy",
+    "name": "Horror Comedy",
+    "slug": "horror-comedy",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-HorrorComedy/800/600"
+  },
+  {
+    "id": "true-crime-horror",
+    "name": "True Crime Horror",
+    "slug": "true-crime-horror",
+    "backgroundImageUrl": "https://picsum.photos/seed/genre-TrueCrimeHorror/800/600"
+  }
+]
