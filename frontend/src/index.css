@@ -20,6 +20,13 @@
 
   --animate-cinematic: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   --animate-fast: all 0.2s ease-in-out;
+  --animate-shimmer: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 :root {
