@@ -36,3 +36,12 @@ export const getTrending = async () => {
   await randomDelay();
   return data.slice(0, 10);
 };
+
+export const getFeaturedContent = async () => {
+  await randomDelay();
+  // Return first 5 items as featured for the hero
+  return data.slice(0, 5).map(item => ({
+    ...item,
+    isOriginal: Math.random() > 0.5 // mock original flag
+  }));
+};
