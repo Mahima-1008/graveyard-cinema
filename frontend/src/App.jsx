@@ -4,7 +4,7 @@ import { ROUTES } from './routes/routes';
 import MainLayout from './layouts/MainLayout';
 import AuthLayout from './layouts/AuthLayout';
 import SuspenseFallback from './components/common/SuspenseFallback';
-import './App.css';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 // Lazy loading pages
 const Home = lazy(() => import('./pages/Home'));
@@ -53,8 +53,10 @@ function App() {
           <Route path={ROUTES.TRAILERS} element={<Trailers />} />
           <Route path={ROUTES.SEARCH} element={<Search />} />
           <Route path={ROUTES.GENRE} element={<Genre />} />
-          <Route path={ROUTES.PROFILE} element={<Profile />} />
-          <Route path={ROUTES.WATCHLIST} element={<Watchlist />} />
+          
+          {/* Protected Routes */}
+          <Route path={ROUTES.PROFILE} element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+          <Route path={ROUTES.WATCHLIST} element={<ProtectedRoute><Watchlist /></ProtectedRoute>} />
         </Route>
 
         {/* 404 Not Found Route */}

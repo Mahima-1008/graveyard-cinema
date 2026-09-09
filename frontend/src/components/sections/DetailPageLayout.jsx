@@ -7,6 +7,7 @@ import { PosterCard } from '@/components/cards';
 import { useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 import { useToast } from '@/components/common/Toast';
+import { useWatchlist } from '@/store/useWatchlist';
 
 function CastCard({ person }) {
   return (
@@ -75,11 +76,13 @@ function ReviewSection() {
 }
 
 export default function DetailPageLayout({ data, isLoading, similarItems, similarLoading, children }) {
-  const [inWatchlist, setInWatchlist] = useState(false);
   const [showWarnings, setShowWarnings] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const navigate = useNavigate();
   const { showToast } = useToast();
+  
+  const { isInWatchlist, addItem, removeItem } = useWatchlist();
+  const inWatchlist = data ? isInWatchlist(data.id) : false;
 
   if (isLoading) {
     return (
@@ -112,8 +115,13 @@ export default function DetailPageLayout({ data, isLoading, similarItems, simila
   }
 
   const handleWatchlist = () => {
-    setInWatchlist(!inWatchlist);
-    showToast(inWatchlist ? "Removed from watchlist" : "Added to watchlist", "success");
+    if (inWatchlist) {
+      removeItem(data.id);
+      showToast("Removed from watchlist", "success");
+    } else {
+      addItem(data);
+      showToast("Added to watchlist", "success");
+    }
   };
 
   return (
