@@ -42,7 +42,7 @@ export default function Particles({ count = 30 }) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         // Fire/ember look
-        ctx.fillStyle = \`rgba(255, 80, 80, \${p.alpha})\`; 
+        ctx.fillStyle = `rgba(255, 80, 80, ${p.alpha})`; 
         ctx.shadowBlur = 10;
         ctx.shadowColor = "rgba(196, 30, 58, 1)";
         ctx.fill();

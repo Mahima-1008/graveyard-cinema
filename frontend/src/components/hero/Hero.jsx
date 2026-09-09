@@ -208,7 +208,7 @@ export default function Hero() {
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              aria-label={\`Go to slide \${idx + 1}\`}
+              aria-label={`Go to slide ${idx + 1}`}
               className="h-1.5 rounded-full overflow-hidden bg-surface transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crimson"
               style={{ width: idx === currentIndex ? '32px' : '16px' }}
             >
@@ -218,7 +218,7 @@ export default function Hero() {
                   initial={{ width: isPlaying ? "0%" : "100%" }}
                   animate={{ width: isPlaying ? "100%" : "100%" }}
                   transition={{ duration: isPlaying ? 7 : 0, ease: "linear" }}
-                  key={\`progress-\${idx}-\${isPlaying}\`}
+                  key={`progress-${idx}-${isPlaying}`}
                 />
               )}
             </button>
