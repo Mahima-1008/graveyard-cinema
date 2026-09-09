@@ -1,14 +1,29 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import { useMovie, useMovies } from '@/hooks/useMovies';
+import { DetailPageLayout } from '@/components/sections';
 
 export default function MovieDetail() {
+  const { slug } = useParams();
+  
+  const { data: movie, isLoading: movieLoading } = useMovie(slug);
+  const { data: allMovies, isLoading: allLoading } = useMovies();
+
+  // Find similar movies (share at least one genre, exclude self)
+  const similarItems = React.useMemo(() => {
+    if (!movie || !allMovies) return [];
+    return allMovies.filter(m => 
+      m.id !== movie.id && 
+      m.genres?.some(g => movie.genres?.includes(g))
+    );
+  }, [movie, allMovies]);
+
   return (
-    <div className="flex-1 flex flex-col items-center justify-center min-h-[50vh] p-8">
-      <h1 className="font-display text-4xl md:text-6xl text-crimson-bright tracking-wider text-center">
-        MovieDetail
-      </h1>
-      <p className="font-body text-text-muted mt-4 text-center max-w-md">
-        This is a placeholder for the MovieDetail page. Content will be added in upcoming steps.
-      </p>
-    </div>
+    <DetailPageLayout 
+      data={movie} 
+      isLoading={movieLoading} 
+      similarItems={similarItems} 
+      similarLoading={allLoading}
+    />
   );
 }
