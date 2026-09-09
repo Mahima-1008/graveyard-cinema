@@ -1,14 +1,16 @@
 import React from 'react';
+import ContentGridPage from './ContentGridPage';
+import { useShortFilms } from '@/hooks/useShortFilms';
 
 export default function ShortFilms() {
+  const { data, isLoading } = useShortFilms();
+  
   return (
-    <div className="flex-1 flex flex-col items-center justify-center min-h-[50vh] p-8">
-      <h1 className="font-display text-4xl md:text-6xl text-crimson-bright tracking-wider text-center">
-        ShortFilms
-      </h1>
-      <p className="font-body text-text-muted mt-4 text-center max-w-md">
-        This is a placeholder for the ShortFilms page. Content will be added in upcoming steps.
-      </p>
-    </div>
+    <ContentGridPage 
+      title="Short Films" 
+      description="Bite-sized terror. Maximum impact in minimum time."
+      rawData={data} 
+      isLoading={isLoading} 
+    />
   );
 }

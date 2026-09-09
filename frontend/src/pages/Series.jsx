@@ -1,14 +1,16 @@
 import React from 'react';
+import ContentGridPage from './ContentGridPage';
+import { useSeries } from '@/hooks/useSeries';
 
 export default function Series() {
+  const { data, isLoading } = useSeries();
+  
   return (
-    <div className="flex-1 flex flex-col items-center justify-center min-h-[50vh] p-8">
-      <h1 className="font-display text-4xl md:text-6xl text-crimson-bright tracking-wider text-center">
-        Series
-      </h1>
-      <p className="font-body text-text-muted mt-4 text-center max-w-md">
-        This is a placeholder for the Series page. Content will be added in upcoming steps.
-      </p>
-    </div>
+    <ContentGridPage 
+      title="Series" 
+      description="Binge-worthy horror that follows you episode after episode."
+      rawData={data} 
+      isLoading={isLoading} 
+    />
   );
 }

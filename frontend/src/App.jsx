@@ -9,16 +9,18 @@ import './App.css';
 // Lazy loading pages
 const Home = lazy(() => import('./pages/Home'));
 const Movies = lazy(() => import('./pages/Movies'));
-const MovieDetail = lazy(() => import('./pages/MovieDetail'));
 const Series = lazy(() => import('./pages/Series'));
-const SeriesDetail = lazy(() => import('./pages/SeriesDetail'));
 const ShortFilms = lazy(() => import('./pages/ShortFilms'));
+const Genre = lazy(() => import('./pages/Genre'));
+
+// Placeholders for remaining pages
 const Stories = lazy(() => import('./pages/Stories'));
 const StoryDetail = lazy(() => import('./pages/StoryDetail'));
 const Reels = lazy(() => import('./pages/Reels'));
-const Trailers = lazy(() => import('./pages/Trailers'));
 const Search = lazy(() => import('./pages/Search'));
-const Genre = lazy(() => import('./pages/Genre'));
+const Trailers = lazy(() => import('./pages/Trailers'));
+const MovieDetail = lazy(() => import('./pages/MovieDetail'));
+const SeriesDetail = lazy(() => import('./pages/SeriesDetail'));
 const Login = lazy(() => import('./pages/Login'));
 const Register = lazy(() => import('./pages/Register'));
 const Profile = lazy(() => import('./pages/Profile'));
