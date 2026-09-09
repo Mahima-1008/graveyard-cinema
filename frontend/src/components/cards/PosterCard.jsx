@@ -14,7 +14,7 @@ import { Bookmark, Star } from 'lucide-react';
 import { Skeleton, IconButton } from '../common';
 import clsx from 'clsx';
 
-export default function PosterCard({ data, isLoading, className }) {
+export default function PosterCard({ data, isLoading, className, customBadge, customCta }) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   if (isLoading) {
@@ -41,30 +41,40 @@ export default function PosterCard({ data, isLoading, className }) {
           "md:group-hover:brightness-110"
         )}
       />
+
+      {customBadge && (
+        <div className="absolute top-2 left-2 z-10">
+          {customBadge}
+        </div>
+      )}
       
       {/* Desktop Hover Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
         <h3 className="font-display text-lg text-text-bright line-clamp-2">{data.title}</h3>
         <div className="flex items-center justify-between mt-2">
-          <div className="flex items-center text-warning text-sm font-bold">
-            <Star className="w-4 h-4 fill-warning mr-1" />
-            {data.rating?.toFixed(1)}
-          </div>
+          {!customBadge && (
+            <div className="flex items-center text-warning text-sm font-bold">
+              <Star className="w-4 h-4 fill-warning mr-1" />
+              {data.rating?.toFixed(1)}
+            </div>
+          )}
         </div>
       </div>
       
-      <div className="absolute top-2 right-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-        <IconButton 
-          icon={Bookmark} 
-          size="sm" 
-          variant="secondary"
-          className="bg-background/80 backdrop-blur text-text-bright border-transparent"
-          onClick={(e) => {
-            e.preventDefault();
-            // Handle watchlist
-          }}
-          aria-label="Add to watchlist"
-        />
+      <div className="absolute top-2 right-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
+        {customCta ? customCta : (
+          <IconButton 
+            icon={Bookmark} 
+            size="sm" 
+            variant="secondary"
+            className="bg-background/80 backdrop-blur text-text-bright border-transparent"
+            onClick={(e) => {
+              e.preventDefault();
+              // Handle watchlist
+            }}
+            aria-label="Add to watchlist"
+          />
+        )}
       </div>
     </Link>
   );
