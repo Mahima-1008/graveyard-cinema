@@ -8,6 +8,7 @@ export const ROUTES = {
   STORIES: "/stories",
   STORY_DETAIL: "/stories/:slug",
   REELS: "/reels",
+  TRENDING: "/trending",
   TRAILERS: "/trailers",
   SEARCH: "/search",
   GENRE: "/genre/:slug",
