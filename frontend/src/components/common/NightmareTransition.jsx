@@ -1,7 +1,28 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 export default function NightmareTransition({ isActive }) {
+  const shouldReduceMotion = useReducedMotion();
+
+  if (shouldReduceMotion) {
+    return (
+      <AnimatePresence>
+        {isActive && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[9999] pointer-events-none flex items-center justify-center bg-black overflow-hidden"
+          >
+            <h2 className="font-display font-bold text-6xl md:text-8xl text-text-bright tracking-widest">
+              RANDOM NIGHTMARE
+            </h2>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    );
+  }
+
   return (
     <AnimatePresence>
       {isActive && (

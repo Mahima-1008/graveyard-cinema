@@ -6,7 +6,7 @@ export default function IconButton({
   icon: Icon, variant = 'primary', size = 'md', 
   loading = false, className, disabled, ...props 
 }) {
-  const baseClasses = 'inline-flex items-center justify-center rounded-full transition-cinematic shrink-0';
+  const baseClasses = 'inline-flex items-center justify-center rounded-full transition-cinematic shrink-0 min-w-[44px] min-h-[44px] focus-visible:ring-2 focus-visible:ring-crimson';
   
   const variants = {
     primary: 'bg-crimson text-text-bright hover:bg-crimson-bright hover:shadow-glow hover:-translate-y-1',

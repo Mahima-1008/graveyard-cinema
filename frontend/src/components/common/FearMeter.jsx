@@ -1,46 +1,62 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useReducedMotion } from 'framer-motion';
 import clsx from 'clsx';
 
-const DEFAULT_LABELS = {
-  1: 'Mild',
-  2: 'Creepy',
-  3: 'Scary',
-  4: 'Terrifying',
-  5: 'Extreme'
-};
+const LABELS = ['Mild', 'Creepy', 'Scary', 'Terrifying', 'Extreme'];
 
-const COLORS = {
-  1: 'bg-surface-light border-surface-light',
-  2: 'bg-warning/50 border-warning/50',
-  3: 'bg-warning border-warning',
-  4: 'bg-crimson border-crimson',
-  5: 'bg-crimson-bright border-crimson-bright shadow-[0_0_8px_rgba(255,80,80,0.8)]'
-};
+export default function FearMeter({ value = 1, label, size = 'md', className }) {
+  const [animatedValue, setAnimatedValue] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
+  const normalizedValue = Math.max(1, Math.min(5, value));
+  const activeLabel = label || LABELS[normalizedValue - 1];
 
-export default function FearMeter({ value = 3, label, className, size = 'md' }) {
-  const normalizedValue = Math.max(1, Math.min(5, Math.floor(value)));
-  const displayLabel = label || `Scare Lvl: ${DEFAULT_LABELS[normalizedValue]}`;
+  useEffect(() => {
+    if (shouldReduceMotion) {
+      setAnimatedValue(normalizedValue);
+    } else {
+      const timer = setTimeout(() => {
+        setAnimatedValue(normalizedValue);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [normalizedValue, shouldReduceMotion]);
+
+  // Generate 5 segments
+  const segments = Array.from({ length: 5 }, (_, i) => i + 1);
 
   return (
     <div className={clsx("flex flex-col gap-1", className)}>
-      <div className="flex gap-1">
-        {[1, 2, 3, 4, 5].map((i) => (
+      <div className="flex items-end justify-between">
+        <span className={clsx(
+          "font-bold uppercase tracking-widest text-crimson drop-shadow-md",
+          size === 'sm' ? "text-[8px]" : "text-[10px]"
+        )}>
+          {activeLabel}
+        </span>
+      </div>
+      
+      <div className={clsx("flex gap-0.5", size === 'sm' ? "h-1" : "h-1.5")}>
+        {segments.map((segment) => (
           <div 
-            key={i} 
+            key={segment}
             className={clsx(
-              "rounded-sm border transition-colors duration-300",
-              size === 'sm' ? "w-2.5 h-1.5" : "w-4 h-2",
-              i <= normalizedValue ? COLORS[normalizedValue] : "bg-transparent border-surface/50"
+              "flex-1 bg-surface transition-all overflow-hidden",
+              size === 'sm' ? "rounded-sm" : "rounded"
             )}
-          />
+          >
+            <div 
+              className={clsx(
+                "h-full w-full origin-left bg-gradient-to-r from-crimson/80 to-crimson-bright",
+                shouldReduceMotion ? "transition-none" : "transition-transform duration-700 ease-out"
+              )}
+              style={{
+                transform: segment <= animatedValue ? 'scaleX(1)' : 'scaleX(0)',
+                transitionDelay: shouldReduceMotion ? '0ms' : `${segment * 100}ms`
+              }}
+            />
+          </div>
         ))}
       </div>
-      <span className={clsx(
-        "font-bold uppercase tracking-widest text-text-muted",
-        size === 'sm' ? "text-[8px]" : "text-[10px]"
-      )}>
-        {displayLabel}
-      </span>
     </div>
   );
 }

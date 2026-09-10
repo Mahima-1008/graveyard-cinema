@@ -38,8 +38,9 @@ export default function Stories() {
         <ContentRow 
           title="Story Collections" 
           items={STORY_COLLECTIONS}
+          itemWidthClass="w-72 md:w-96 lg:w-[600px]"
           renderItem={(item) => (
-            <FeaturedCard data={item} className="w-[280px] md:w-[400px] lg:w-[600px]" />
+            <FeaturedCard data={item} />
           )}
         />
       </div>

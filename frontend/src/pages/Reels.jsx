@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useReels } from '@/hooks/useReels';
 import { Skeleton, IconButton, Button, Modal, EmptyState } from '@/components/common';
 import { ArrowLeft, Heart, MessageCircle, Share2, Bookmark, Volume2, VolumeX, MoreHorizontal } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import clsx from 'clsx';
 
 function ReelItem({ data, isActive, onCommentClick }) {
@@ -12,6 +12,7 @@ function ReelItem({ data, isActive, onCommentClick }) {
   const [isMuted, setIsMuted] = useState(true);
   const [showFullCaption, setShowFullCaption] = useState(false);
   const [showHeartBurst, setShowHeartBurst] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   const handleLike = () => {
     setIsLiked(!isLiked);
@@ -36,7 +37,7 @@ function ReelItem({ data, isActive, onCommentClick }) {
         onDoubleClick={handleDoubleTap}
         className="absolute inset-0 w-full h-full object-cover"
         initial={{ scale: 1 }}
-        animate={{ scale: isActive ? 1.05 : 1 }}
+        animate={{ scale: isActive && !shouldReduceMotion ? 1.05 : 1 }}
         transition={{ duration: 15, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
       />
       

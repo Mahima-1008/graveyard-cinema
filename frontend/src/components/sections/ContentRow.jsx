@@ -12,7 +12,8 @@ export default function ContentRow({
   loadingCount = 6,
   renderItem,
   emptyMessage = "Nothing found in the shadows...",
-  className 
+  className,
+  itemWidthClass = "w-36 md:w-48 lg:w-52"
 }) {
   const rowRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
@@ -90,12 +91,12 @@ export default function ContentRow({
           
           {isLoading 
             ? Array.from({ length: loadingCount }).map((_, i) => (
-                <div key={i} className="snap-start shrink-0 w-[140px] md:w-[200px]">
+                <div key={i} className={clsx("snap-start shrink-0", itemWidthClass)}>
                   {renderItem ? renderItem(null, true) : null}
                 </div>
               ))
             : items.map((item, index) => (
-                <div key={item.id || index} className="snap-start shrink-0 w-[140px] md:w-[200px]">
+                <div key={item.id || index} className={clsx("snap-start shrink-0", itemWidthClass)}>
                   {renderItem(item, false)}
                 </div>
               ))

@@ -50,8 +50,9 @@ export default function Home() {
             title="Continue Watching" 
             items={continueWatching}
             isLoading={moviesLoading}
+            itemWidthClass="w-60 md:w-80"
             renderItem={(item, isLoading) => (
-              <LandscapeCard data={item} isLoading={isLoading} className="w-[240px] md:w-[320px]" />
+              <LandscapeCard data={item} isLoading={isLoading} />
             )}
           />
         )}
@@ -123,8 +124,9 @@ export default function Home() {
             items={series?.slice(2, 5)}
             isLoading={seriesLoading}
             loadingCount={3}
+            itemWidthClass="w-72 md:w-full max-w-[800px]"
             renderItem={(item, isLoading) => (
-              <FeaturedCard data={item} isLoading={isLoading} className="w-[300px] md:w-[600px] lg:w-[800px]" />
+              <FeaturedCard data={item} isLoading={isLoading} />
             )}
           />
         </div>
