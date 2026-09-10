@@ -16,5 +16,6 @@ export const ROUTES = {
   REGISTER: "/register",
   PROFILE: "/profile",
   WATCHLIST: "/watchlist",
+  CRYPT: "/the-crypt",
   NOT_FOUND: "*"
 };

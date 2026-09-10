@@ -92,7 +92,21 @@ export default function Home() {
           )}
         />
 
-        {/* 6. Because You Watched */}
+        {/* 6. Graveyard Originals */}
+        <ContentRow 
+          title="Graveyard Originals" 
+          items={movies?.slice(4, 9)}
+          isLoading={moviesLoading}
+          renderItem={(item, isLoading) => (
+            <PosterCard 
+              data={item} 
+              isLoading={isLoading} 
+              customBadge={<Badge variant="crimson">ORIGINAL</Badge>}
+            />
+          )}
+        />
+
+        {/* 7. Because You Watched */}
         <ContentRow 
           title='Because You Watched "The Weeping Shadows"' 
           items={movies?.slice(5, 12)}
@@ -102,7 +116,7 @@ export default function Home() {
           )}
         />
 
-        {/* 7. Editor's Picks (Bigger Gap Before) */}
+        {/* 8. Editor's Picks (Bigger Gap Before) */}
         <div className="mt-8 mb-4">
           <ContentRow 
             title="Editor's Picks" 
@@ -113,6 +127,27 @@ export default function Home() {
               <FeaturedCard data={item} isLoading={isLoading} className="w-[300px] md:w-[600px] lg:w-[800px]" />
             )}
           />
+        </div>
+
+        {/* 9. Midnight Picks */}
+        <div className="py-8 bg-surface/50 border-y border-surface relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div className="relative z-10">
+            <ContentRow 
+              title="Midnight Picks" 
+              items={series?.slice(1, 8)}
+              isLoading={seriesLoading}
+              renderItem={(item, isLoading) => (
+                <PosterCard 
+                  data={item} 
+                  isLoading={isLoading} 
+                  className="brightness-75 hover:brightness-110"
+                />
+              )}
+            />
+          </div>
         </div>
 
         {/* 8. Recently Added */}

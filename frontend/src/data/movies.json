@@ -22,6 +22,8 @@
     ],
     "scareLevel": 1,
     "fearMeter": 90,
+    "universeId": "shadows-universe",
+    "universeName": "The Shadows",
     "cast": [
       "Bill Skarsgård",
       "Lin Shaye"
@@ -59,6 +61,8 @@
     ],
     "scareLevel": 4,
     "fearMeter": 93,
+    "universeId": "shadows-universe",
+    "universeName": "The Shadows",
     "cast": [
       "Anya Taylor-Joy",
       "Anya Taylor-Joy"

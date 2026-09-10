@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Play, Plus, Check, ThumbsUp, ThumbsDown, Share2, Star, ChevronDown, ChevronUp } from 'lucide-react';
-import { Button, IconButton, Badge, Skeleton, ErrorState, Modal, ToastProvider } from '@/components/common';
+import { Button, IconButton, Badge, Skeleton, ErrorState, Modal, ToastProvider, FearMeter } from '@/components/common';
 import { ContentRow } from '@/components/sections';
 import { PosterCard } from '@/components/cards';
 import { useNavigate } from 'react-router-dom';
@@ -75,7 +75,7 @@ function ReviewSection() {
   );
 }
 
-export default function DetailPageLayout({ data, isLoading, similarItems, similarLoading, children }) {
+export default function DetailPageLayout({ data, isLoading, similarItems, similarLoading, universeItems, universeLoading, children }) {
   const [showWarnings, setShowWarnings] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const navigate = useNavigate();
@@ -173,13 +173,7 @@ export default function DetailPageLayout({ data, isLoading, similarItems, simila
             
             {/* Fear Meter */}
             <div className="flex items-center gap-2 border-l border-surface/50 pl-3 md:pl-4">
-              <Badge variant="crimson" className="text-[10px]">Scare Lvl {data.scareLevel}</Badge>
-              <div className="hidden sm:flex items-center gap-2">
-                <span className="text-[10px] uppercase tracking-wider">Fear</span>
-                <div className="w-16 h-1.5 bg-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-crimson" style={{ width: `${data.fearMeter}%` }}></div>
-                </div>
-              </div>
+              <FearMeter value={Math.ceil((data.fearMeter || 60) / 20)} />
             </div>
           </div>
 
@@ -234,11 +228,29 @@ export default function DetailPageLayout({ data, isLoading, similarItems, simila
                     <p className="text-sm"><span className="text-text-muted">Director:</span> <span className="text-text-bright font-bold">{data.director}</span></p>
                     <p className="text-sm"><span className="text-text-muted">Languages:</span> <span className="text-text-bright font-bold">{data.languages?.join(', ')}</span></p>
                     {data.contentWarnings && data.contentWarnings.length > 0 && (
-                      <div className="mt-4">
-                        <span className="text-xs font-bold text-crimson uppercase tracking-wider">Content Warnings</span>
-                        <div className="flex flex-wrap gap-2 mt-2">
+                      <div className="mt-6 border-t border-surface/50 pt-4">
+                        <span className="text-xs font-bold text-text-muted uppercase tracking-wider mb-4 block">Intensity Breakdown</span>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                          <FearMeter 
+                            label="Psychological" 
+                            value={((data.id?.length || 5) % 3) + 3} 
+                          />
+                          <FearMeter 
+                            label="Gore" 
+                            value={data.contentWarnings.includes('Gore') ? 5 : ((data.id?.length || 4) % 4) + 1} 
+                          />
+                          <FearMeter 
+                            label="Jump Scares" 
+                            value={data.contentWarnings.includes('Jump Scares') ? 5 : ((data.id?.charCodeAt(0) || 65) % 4) + 2} 
+                          />
+                          <FearMeter 
+                            label="Disturbing" 
+                            value={data.contentWarnings.includes('Disturbing') ? 4 : ((data.id?.charCodeAt(1) || 66) % 3) + 2} 
+                          />
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-6">
                           {data.contentWarnings.map(w => (
-                            <span key={w} className="bg-crimson/10 text-crimson text-xs px-2 py-1 rounded">{w}</span>
+                            <span key={w} className="bg-crimson/10 text-crimson text-[10px] uppercase font-bold tracking-wider px-2 py-1 rounded">{w}</span>
                           ))}
                         </div>
                       </div>
@@ -265,6 +277,18 @@ export default function DetailPageLayout({ data, isLoading, similarItems, simila
                   <div key={idx} className="snap-start"><CastCard person={person} /></div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Universe Content */}
+          {universeItems && universeItems.length > 0 && (
+            <div className="-mx-6 lg:-mx-12 mb-12">
+              <ContentRow 
+                title={`Part of the ${data.universeName || 'Horror'} Universe`} 
+                items={universeItems}
+                isLoading={universeLoading}
+                renderItem={(item, isLdg) => <PosterCard data={item} isLoading={isLdg} />}
+              />
             </div>
           )}
 

@@ -26,6 +26,7 @@ const Login = lazy(() => import('./pages/Login'));
 const Register = lazy(() => import('./pages/Register'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Watchlist = lazy(() => import('./pages/Watchlist'));
+const Crypt = lazy(() => import('./pages/Crypt'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
             <Route path={ROUTES.TRAILERS} element={<Trailers />} />
             <Route path={ROUTES.SEARCH} element={<Search />} />
             <Route path={ROUTES.GENRE} element={<Genre />} />
+            <Route path={ROUTES.CRYPT} element={<Crypt />} />
             
             {/* Protected Routes */}
             <Route path={ROUTES.PROFILE} element={<ProtectedRoute><Profile /></ProtectedRoute>} />

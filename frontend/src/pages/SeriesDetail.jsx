@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSeries } from '@/hooks/useSeries';
+import { useMovies } from '@/hooks/useMovies';
 import { DetailPageLayout } from '@/components/sections';
 import { EpisodeCard } from '@/components/cards';
 import clsx from 'clsx';
@@ -9,7 +10,10 @@ export default function SeriesDetail() {
   const { slug } = useParams();
   
   const { data: series, isLoading: seriesLoading } = useSeries(slug);
-  const { data: allSeries, isLoading: allLoading } = useSeries(); // for similar
+  const { data: allSeries, isLoading: allSeriesLoading } = useSeries(); // for similar
+  const { data: allMovies, isLoading: allMoviesLoading } = useMovies();
+
+  const isLoadingAll = allMoviesLoading || allSeriesLoading;
 
   const [activeSeason, setActiveSeason] = useState(1);
 
@@ -22,6 +26,15 @@ export default function SeriesDetail() {
     );
   }, [series, allSeries]);
 
+  // Find universe items
+  const universeItems = React.useMemo(() => {
+    if (!series || !series.universeId || !allMovies || !allSeries) return [];
+    const allContent = [...allMovies, ...allSeries];
+    return allContent.filter(item => 
+      item.id !== series.id && item.universeId === series.universeId
+    );
+  }, [series, allMovies, allSeries]);
+
   const currentSeasonData = series?.seasons?.find(s => s.seasonNumber === activeSeason);
 
   return (
@@ -29,7 +42,9 @@ export default function SeriesDetail() {
       data={series} 
       isLoading={seriesLoading} 
       similarItems={similarItems} 
-      similarLoading={allLoading}
+      similarLoading={allSeriesLoading}
+      universeItems={universeItems}
+      universeLoading={isLoadingAll}
     >
       {/* Series Specific Content: Season Selector & Episodes */}
       {series?.seasons && series.seasons.length > 0 && (

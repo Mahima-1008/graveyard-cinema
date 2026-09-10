@@ -11,7 +11,7 @@ Expected data shape:
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bookmark, Star } from 'lucide-react';
-import { Skeleton, IconButton } from '../common';
+import { Skeleton, IconButton, FearMeter } from '../common';
 import clsx from 'clsx';
 
 export default function PosterCard({ data, isLoading, className, customBadge, customCta }) {
@@ -53,10 +53,14 @@ export default function PosterCard({ data, isLoading, className, customBadge, cu
         <h3 className="font-display text-lg text-text-bright line-clamp-2">{data.title}</h3>
         <div className="flex items-center justify-between mt-2">
           {!customBadge && (
-            <div className="flex items-center text-warning text-sm font-bold">
-              <Star className="w-4 h-4 fill-warning mr-1" />
-              {data.rating?.toFixed(1)}
-            </div>
+            data.fearMeter ? (
+              <FearMeter value={Math.ceil((data.fearMeter / 100) * 5)} size="sm" />
+            ) : (
+              <div className="flex items-center text-warning text-sm font-bold">
+                <Star className="w-4 h-4 fill-warning mr-1" />
+                {data.rating?.toFixed(1)}
+              </div>
+            )
           )}
         </div>
       </div>

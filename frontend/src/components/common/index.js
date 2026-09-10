@@ -8,3 +8,6 @@ export { default as EmptyState } from './EmptyState';
 export { default as ErrorState } from './ErrorState';
 export { default as Spinner } from './Spinner';
 export { default as Tooltip } from './Tooltip';
+export { ErrorBoundary } from './ErrorBoundary';
+export { default as FearMeter } from './FearMeter';
+export { default as NightmareTransition } from './NightmareTransition';
